@@ -1,0 +1,44 @@
+[package]
+authors = ["Guillem Cordoba <guillem.cordoba@gmail.com>"]
+edition = "2018"
+name = "compository"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0"
+hc_utils = {git = "https://github.com/holochain/hc-utils", branch = "develop", package = "hc_utils"}
+holo_hash = {git = "https://github.com/holochain/holochain", rev = "3a437ba", package = "holo_hash"}
+holochain = {git = "https://github.com/holochain/holochain", rev = "3a437ba", package = "holochain"}
+holochain_serialized_bytes = "=0.0.45"
+holochain_types = {git = "https://github.com/holochain/holochain", rev = "3a437ba", package = "holochain_types"}
+holochain_websocket = {git = "https://github.com/holochain/holochain", rev = "3a437ba", package = "holochain_websocket"}
+holochain_zome_types = {git = "https://github.com/holochain/holochain", rev = "3a437ba", package = "holochain_zome_types"}
+serde = {version = "1.0.104", features = ["derive"]}
+serde_bytes = "0.11"
+serde_json = {version = "1.0.51", features = ["preserve_order"]}
+structopt = "0.3.11"
+tokio = {version = "0.2.11", features = ["full"]}
+tracing = "=0.1.21"
+tracing-futures = "0.2"
+tracing-subscriber = "0.2"
+url = "2.2"
+
+[patch.crates-io]
+
+rkv = {git = "https://github.com/holochain/rkv.git", branch = "master"}
+#rkv = { path = "../../rust/rkv" }
+lmdb-rkv = {git = "https://github.com/holochain/lmdb-rs.git"}
+#lmdb-rkv = { path = "../../rust/lmdb-rs" }
+# holochain_wasmer_guest = { path = "../holochain-wasmer/crates/guest" }
+# ghost_actor = { path = "../ghost_actor/crates/ghost_actor" }
+# ghost_actor = { git = "https://github.com/holochain/ghost_actor.git", branch = "add_observability" }
+# lair_keystore_api = { git = "https://github.com/holochain/lair.git", branch = "bump_ga" }
+# lair_keystore_client = { git = "https://github.com/holochain/lair.git", branch = "bump_ga" }
+# lair_keystore_api = { path = "../lair/crates/lair_keystore_api" }
+# lair_keystore_client = { path = "../lair/crates/lair_keystore_client" }
+# observability = { path = "../../rust/observability" }
+tokio_safe_block_on = {git = "https://github.com/neonphog/tokio_safe_block_on.git", branch = "fix_holochain_bug"}
+hdk3 = {git = "https://github.com/holochain/holochain", rev = "3a437ba", package = "hdk3"}
+holo_hash = {git = "https://github.com/holochain/holochain", rev = "3a437ba", package = "holo_hash"}
