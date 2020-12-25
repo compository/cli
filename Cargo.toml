@@ -9,12 +9,12 @@ version = "0.1.0"
 [dependencies]
 anyhow = "1.0"
 hc_utils = {git = "https://github.com/holochain/hc-utils", branch = "develop", package = "hc_utils"}
-holo_hash = {git = "https://github.com/holochain/holochain", rev = "3a437ba", package = "holo_hash"}
-holochain = {git = "https://github.com/holochain/holochain", rev = "3a437ba", package = "holochain"}
-holochain_serialized_bytes = "=0.0.45"
-holochain_types = {git = "https://github.com/holochain/holochain", rev = "3a437ba", package = "holochain_types"}
-holochain_websocket = {git = "https://github.com/holochain/holochain", rev = "3a437ba", package = "holochain_websocket"}
-holochain_zome_types = {git = "https://github.com/holochain/holochain", rev = "3a437ba", package = "holochain_zome_types"}
+holo_hash = {git = "https://github.com/holochain/holochain", rev = "2dcb4d7", package = "holo_hash"}
+holochain = {git = "https://github.com/holochain/holochain", rev = "2dcb4d7", package = "holochain"}
+holochain_serialized_bytes = "=0.0.47"
+holochain_types = {git = "https://github.com/holochain/holochain", rev = "2dcb4d7", package = "holochain_types"}
+holochain_websocket = {git = "https://github.com/holochain/holochain", rev = "2dcb4d7", package = "holochain_websocket"}
+holochain_zome_types = {git = "https://github.com/holochain/holochain", rev = "2dcb4d7", package = "holochain_zome_types"}
 serde = {version = "1.0.104", features = ["derive"]}
 serde_bytes = "0.11"
 serde_json = {version = "1.0.51", features = ["preserve_order"]}
@@ -40,5 +40,5 @@ lmdb-rkv = {git = "https://github.com/holochain/lmdb-rs.git"}
 # lair_keystore_client = { path = "../lair/crates/lair_keystore_client" }
 # observability = { path = "../../rust/observability" }
 tokio_safe_block_on = {git = "https://github.com/neonphog/tokio_safe_block_on.git", branch = "fix_holochain_bug"}
-hdk3 = {git = "https://github.com/holochain/holochain", rev = "3a437ba", package = "hdk3"}
-holo_hash = {git = "https://github.com/holochain/holochain", rev = "3a437ba", package = "holo_hash"}
+hdk3 = {git = "https://github.com/holochain/holochain", rev = "2dcb4d7", package = "hdk3"}
+holo_hash = {git = "https://github.com/holochain/holochain", rev = "2dcb4d7", package = "holo_hash"}
