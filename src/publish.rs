@@ -10,7 +10,8 @@ use crate::{
 use anyhow::{anyhow, Result};
 use hc_utils::WrappedEntryHash;
 use holo_hash::HasHash;
-use holochain_types::{cell::CellId, dna::DnaFile};
+use holochain_types::{dna::DnaFile};
+use holochain_zome_types::CellId;
 
 use self::file_upload::upload_file;
 

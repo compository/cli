@@ -1,6 +1,7 @@
 use conductor_api::{app_websocket::AppWebsocket, types::ClientAppResponse};
-use holochain_types::{app::InstalledCell, cell::CellId};
-use publish::{publish_dna_template, publish_insantiated_dna, publish_zomes};
+use holochain_types::app::InstalledCell;
+use holochain_zome_types::CellId;
+use publish::publish_zomes;
 use structopt::StructOpt;
 
 mod conductor_api;

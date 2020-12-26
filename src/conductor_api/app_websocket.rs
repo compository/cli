@@ -1,6 +1,6 @@
 use anyhow::{anyhow, Context, Result};
-use holochain_types::cell::CellId;
 use holochain_websocket::{websocket_connect, WebsocketConfig, WebsocketSender};
+use holochain_zome_types::CellId;
 use std::sync::Arc;
 use tracing::{instrument, trace};
 use url::Url;

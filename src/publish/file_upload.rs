@@ -3,8 +3,7 @@ use std::{convert::TryInto, time::SystemTime};
 
 use anyhow::{anyhow, Result};
 use hc_utils::WrappedEntryHash;
-use holochain_types::cell::CellId;
-use holochain_zome_types::timestamp;
+use holochain_zome_types::{CellId, timestamp};
 
 use crate::conductor_api::{
     app_websocket::AppWebsocket,
