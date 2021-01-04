@@ -38,7 +38,7 @@ async fn run() -> Result<()> {
 
     let dna_def_json = read_dna(&opt.workdir).await?;
 
-    let dna_name = dna_def_json.name.clone();
+    let _dna_name = dna_def_json.name.clone();
 
     let zomes = get_zomes(&dna_def_json, &opt.workdir).await?;
 

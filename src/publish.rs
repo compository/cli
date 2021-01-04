@@ -17,7 +17,7 @@ use self::file_upload::upload_file;
 
 mod file_upload;
 
-pub async fn publish_dna_template(
+pub async fn _publish_dna_template(
     ws: &mut AppWebsocket,
     compository_cell_id: &CellId,
     dna_name: String,
@@ -79,7 +79,7 @@ pub async fn publish_zomes(
     Ok(zomes_hashes)
 }
 
-pub async fn publish_insantiated_dna(
+pub async fn _publish_insantiated_dna(
     ws: &mut AppWebsocket,
     compository_cell_id: &CellId,
     dna_file: DnaFile,
