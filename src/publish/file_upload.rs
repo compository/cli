@@ -3,7 +3,7 @@ use std::{convert::TryInto, time::SystemTime};
 
 use anyhow::{anyhow, Result};
 use hc_utils::WrappedEntryHash;
-use holochain_zome_types::{CellId, timestamp};
+use holochain_zome_types::{timestamp, CellId};
 
 use crate::conductor_api::{
     app_websocket::AppWebsocket,
@@ -71,7 +71,7 @@ async fn upload_chunk(
     }
 }
 
-#[derive(Clone, Serialize, Deserialize, SerializedBytes)]
+#[derive(Clone, Serialize, Deserialize, Debug, SerializedBytes)]
 #[serde(rename_all = "camelCase")]
 pub struct CreateFileMetadataInput {
     pub name: String,
